@@ -358,7 +358,10 @@ void MultiCdnStrategyTestCase::TestScaleStateNormal()
 
 void MultiCdnStrategyTestCase::TestCompareStateNormal()
 {
-
+	// add new code
+	m_multi_cdn_ptr->collect_download_event(pack_ptr, 40000);
+	m_multi_cdn_ptr->collect_download_event(pack_ptr, 45000);
+	m_multi_cdn_ptr->time_out_event();
 }
 
 
